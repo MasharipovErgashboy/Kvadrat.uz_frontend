@@ -77,6 +77,7 @@ const Investment = () => {
     const [faqItems, setFaqItems] = useState([]);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const fetchData = async () => {
             try {
                 const [statsRes, teamRes, faqsRes] = await Promise.all([

@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Calculator.css';
 
 const Calculator = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     // Calculator 1 State (Sarmoya)
     const [initialInv, setInitialInv] = useState(100000000);
     const [monthlyInv, setMonthlyInv] = useState(2000000);

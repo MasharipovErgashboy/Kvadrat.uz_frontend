@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
 import Partners from '../components/Partners';
 import Features from '../components/Features';
@@ -9,6 +9,10 @@ import FAQ from '../components/FAQ';
 import AppPromo from '../components/AppPromo';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />

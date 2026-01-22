@@ -21,6 +21,7 @@ const Contact = () => {
     });
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const fetchContactInfo = async () => {
             try {
                 const response = await getContactInfo();

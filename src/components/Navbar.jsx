@@ -9,6 +9,11 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleNavClick = () => {
+    setIsOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navLinks = [
     { title: 'Bosh sahifa', path: '/' },
     { title: 'Investitsiya', path: '/investitsiya' },
@@ -30,7 +35,7 @@ const Navbar = () => {
           <ul className="nav-links">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Link to={link.path} className="nav-link">
+                <Link to={link.path} className="nav-link" onClick={handleNavClick}>
                   {link.title}
                 </Link>
               </li>
@@ -40,7 +45,7 @@ const Navbar = () => {
 
         {/* Action Button (Desktop) */}
         <div className="desktop-action">
-          <Link to="/contact" className="btn-primary">
+          <Link to="/contact" className="btn-primary" onClick={handleNavClick}>
             Ariza qoldirish
             <ArrowUpRight size={18} />
           </Link>
@@ -64,13 +69,13 @@ const Navbar = () => {
               <ul className="mobile-nav-links">
                 {navLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="mobile-nav-link" onClick={toggleMenu}>
+                    <Link to={link.path} className="mobile-nav-link" onClick={handleNavClick}>
                       {link.title}
                     </Link>
                   </li>
                 ))}
                 <li>
-                  <Link to="/contact" className="btn-primary mobile-btn" onClick={toggleMenu}>
+                  <Link to="/contact" className="btn-primary mobile-btn" onClick={handleNavClick}>
                     Ariza qoldirish
                     <ArrowUpRight size={18} />
                   </Link>
