@@ -1,0 +1,479 @@
+.investment-page {
+    background-color: white;
+    padding-top: 8rem;
+    /* Space for fixed navbar */
+    min-height: 100vh;
+}
+
+.inv-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inv-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.inv-title-highlight {
+    /* Optionally style specific word if needed, based on image looks like normal black text but maybe emphasized */
+}
+
+.inv-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.inv-hero-image-wrapper {
+    width: 100%;
+    margin-bottom: 4rem;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.inv-hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Intro Grid */
+.inv-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .inv-intro-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+}
+
+.inv-intro-left h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #111;
+    margin: 0;
+    max-width: 400px;
+}
+
+.inv-intro-right p {
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Features Section */
+.inv-features-section {
+    padding: 4rem 0;
+    background-color: #F8F5FF;
+    /* Very light lavender/purple background */
+    width: 100%;
+}
+
+.inv-feature-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.inv-feature-row:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .inv-feature-row {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .inv-feature-row.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.inv-feature-content {
+    flex: 1;
+    max-width: 480px;
+}
+
+.inv-feature-content h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.inv-feature-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.inv-btn-secondary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #F3F0FF;
+    /* Slightly darker lavender for button */
+    color: #333;
+    border: 1px solid #E5DEFF;
+    padding: 0.6rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.inv-btn-secondary:hover {
+    background: #EBE5FF;
+    border-color: #D1C4FF;
+}
+
+.inv-feature-image {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.inv-feature-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+/* Security Section */
+.inv-security-section {
+    padding: 6rem 0;
+    background-color: white;
+}
+
+.inv-section-header {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+
+.inv-badge {
+    border: 1px solid #E2E8F0;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #475569;
+    background: #FaFAFa;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.inv-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0F172A;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.inv-section-subtitle {
+    font-size: 1.125rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+.inv-security-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .inv-security-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.inv-security-card {
+    border: 1px solid #F1F5F9;
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.inv-security-card:hover {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+    border-color: #E2E8F0;
+    transform: translateY(-5px);
+}
+
+.inv-security-number {
+    width: 48px;
+    height: 48px;
+    background-color: #8B5CF6; /* Purple-500 */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.inv-security-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.inv-security-card p {
+    font-size: 0.95rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+/* Stats Section */
+.inv-stats-section {
+    padding: 6rem 0;
+    background-color: white; /* Or keep transparent if main bg covers it */
+}
+
+.inv-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto-fit columns */
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .inv-stats-grid {
+        grid-template-columns: repeat(4, 1fr); /* Force 4 cols on big screen */
+    }
+}
+
+.inv-stats-card {
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 240px; /* Tall aesthetic */
+}
+
+/* Helper colors from Tailwind */
+.bg-purple-50 { background-color: #FAF5FF; }
+.text-purple-600 { color: #9333EA; }
+
+.bg-blue-50 { background-color: #EFF6FF; }
+.text-blue-600 { color: #2563EB; }
+
+.bg-orange-50 { background-color: #FFF7ED; }
+.text-orange-600 { color: #EA580C; }
+
+.bg-yellow-50 { background-color: #FEFCE8; }
+.text-yellow-600 { color: #CA8A04; }
+
+
+.inv-stats-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: white; /* White icon container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto; /* Push content down */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.inv-stats-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0F172A;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.inv-stats-suffix {
+    font-size: 2rem;
+    font-weight: 600;
+    color: inherit;
+}
+
+.inv-stats-label {
+    font-size: 0.9rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+/* Investors Section */
+.inv-investors-section {
+    padding: 6rem 0;
+    background-color: white;
+}
+
+.inv-investors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .inv-investors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.inv-investor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inv-investor-img-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    background-color: #f0f0f0;
+}
+
+.inv-investor-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.inv-investor-card:hover .inv-investor-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.inv-investor-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 0.25rem;
+}
+
+.inv-investor-role {
+    font-size: 0.9rem;
+    color: #64748B;
+}
+
+/* Investment FAQ Section */
+.inv-faq-section {
+    padding-bottom: 8rem;
+    background-color: white;
+}
+
+.inv-faq-list {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inv-faq-item {
+    border: 1px solid #F1F5F9;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inv-faq-item.active {
+    background-color: #F3E8FF; /* Light purple heavy background */
+    border-color: #D8B4FE;
+}
+
+.inv-faq-question {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inv-faq-question h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0;
+}
+
+.inv-faq-icon {
+    color: #64748B;
+    display: flex;
+    align-items: center;
+}
+
+.inv-faq-item.active .inv-faq-icon {
+    color: #9333EA; /* Purple text */
+}
+
+.inv-faq-answer {
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+
+.inv-faq-answer p {
+    padding-bottom: 1.5rem;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #475569;
+}

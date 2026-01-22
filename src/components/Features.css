@@ -1,0 +1,223 @@
+.features-section {
+    padding-top: 5rem;
+    padding-bottom: 0;
+    /* Light blue-ish tint similar to reference */
+    background-color: #F8F9FF;
+}
+
+@media (min-width: 1024px) {
+    .features-section {
+        padding-top: 8rem;
+        /* 128px */
+    }
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    /* Wider container for spacious look */
+    padding: 0 1.5rem;
+}
+
+/* Header */
+.features-header {
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 5rem;
+}
+
+.features-badge {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 8px 24px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748B;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.features-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #0F172A;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.features-subtitle {
+    color: #64748B;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .features-title {
+        font-size: 56px;
+    }
+}
+
+/* Layout Wrapper */
+.features-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .features-content-wrapper {
+        flex-direction: row;
+        align-items: stretch;
+        /* Crucial: Makes all columns equal height */
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+/* Columns */
+.features-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.col-left,
+.col-right {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+
+    .col-left,
+    .col-right {
+        width: 46%;
+        /* Maximizing side space */
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .col-center {
+        width: 2%;
+        /* 2% width as requested */
+        height: auto;
+        min-height: 0;
+        border-radius: 40px 40px 0 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+/* Feature Card Styling - Pixel Perfect Refinement */
+.feature-card {
+    background-color: white;
+    border-radius: 24px;
+    /* Matches reference larger radius */
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    /* Soft diffuse shadow, no visible border */
+    box-shadow: 0 20px 40px -4px rgba(0, 0, 0, 0.03), 0 8px 16px -4px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Box */
+.feature-icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    /* Squircle */
+    background-color: #F8FAFC;
+    /* Light gray/slate */
+    border: 1px solid #F1F5F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E293B;
+    /* Dark slate text */
+    margin-bottom: 0.5rem;
+}
+
+.feature-title {
+    font-size: 1.35rem;
+    /* ~22px */
+    font-weight: 700;
+    color: #0F172A;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.feature-desc {
+    font-size: 0.95rem;
+    /* 15px */
+    line-height: 1.6;
+    color: #64748B;
+    margin: 0;
+}
+
+/* Center Image Styling - The "One-to-One" Part */
+.col-center {
+    position: relative;
+    width: 100%;
+    /* Mobile styles */
+    height: 500px;
+    border-radius: 32px 32px 0 0;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.features-bg-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* The overlay wrapper centers the phone */
+.features-overlay-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    /* Fill almost the entire narrow card */
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.features-phone-app {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+@media (min-width: 1024px) {
+    .col-center {
+        margin-top: 0;
+        height: 700px;
+        /* Taller on desktop */
+        border-radius: 40px 40px 0 0;
+        /* Larger desktop radius */
+    }
+}
