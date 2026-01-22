@@ -2,7 +2,7 @@
     padding-top: 5rem;
     padding-bottom: 0;
     /* Light blue-ish tint similar to reference */
-    background-color: #F8F9FF;
+    background-color: white;
 }
 
 @media (min-width: 1024px) {
@@ -91,9 +91,22 @@
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .features-col {
+        gap: 5rem;
+    }
+}
+
 .col-left,
 .col-right {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .col-left,
+    .col-right {
+        gap: 5.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -122,16 +135,24 @@
 /* Feature Card Styling - Pixel Perfect Refinement */
 .feature-card {
     background-color: white;
-    border-radius: 24px;
+    border-radius: 28px;
     /* Matches reference larger radius */
-    padding: 32px;
+    padding: 40px 32px;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
     /* Soft diffuse shadow, no visible border */
     box-shadow: 0 20px 40px -4px rgba(0, 0, 0, 0.03), 0 8px 16px -4px rgba(0, 0, 0, 0.02);
     transition: transform 0.3s ease;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        padding: 56px 32px;
+        gap: 2.5rem;
+        border-radius: 24px;
+    }
 }
 
 .feature-card:hover {
@@ -141,9 +162,9 @@
 
 /* Icon Box */
 .feature-icon-box {
-    width: 56px;
-    height: 56px;
-    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
     /* Squircle */
     background-color: #F8FAFC;
     /* Light gray/slate */
@@ -153,7 +174,7 @@
     justify-content: center;
     color: #1E293B;
     /* Dark slate text */
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .feature-title {
@@ -162,13 +183,13 @@
     font-weight: 700;
     color: #0F172A;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .feature-desc {
     font-size: 0.95rem;
     /* 15px */
-    line-height: 1.6;
+    line-height: 2;
     color: #64748B;
     margin: 0;
 }

@@ -81,7 +81,7 @@ const Hero = () => {
                         <div className="card-content">
                             <div className="card-header">
                                 <span className="card-name">Mansur Karimov</span>
-                                <span className="card-value up">+10,7%</span>
+                                <span className="card-value up">+12%</span>
                             </div>
                             <div className="card-footer">
                                 <span className="card-role">Investor</span>
@@ -107,7 +107,7 @@ const Hero = () => {
                         <div className="card-content">
                             <div className="card-header">
                                 <span className="card-name">Sardor Berdiyev</span>
-                                <span className="card-value">$8.99</span>
+                                <span className="card-value">8.99 UZS</span>
                             </div>
                             <div className="card-footer">
                                 <span className="card-role">Uy oluvchi</span>

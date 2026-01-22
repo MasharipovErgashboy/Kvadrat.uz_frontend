@@ -114,13 +114,13 @@
 .form-textarea {
     width: 100%;
     padding: 14px 16px;
-    border: none;
+    border: 2px solid #CBD5E1; /* stronger, more visible border */
     border-radius: 8px;
     background-color: #ffffff;
     font-size: 1rem;
     color: #333;
     outline: none;
-    transition: box-shadow 0.2s;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .form-input::placeholder,
@@ -128,9 +128,15 @@
     color: #aaa;
 }
 
+.form-input:hover,
+.form-textarea:hover {
+    border-color: #94A3B8; /* darker on hover for visibility */
+}
+
 .form-input:focus,
 .form-textarea:focus {
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+    border-color: #6c5ce7; /* primary accent on focus */
+    box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.2);
 }
 
 .form-textarea {

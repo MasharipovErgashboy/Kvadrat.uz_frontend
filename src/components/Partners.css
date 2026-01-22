@@ -4,6 +4,18 @@
     background: white;
 }
 
+@media (max-width: 768px) {
+    .partners-section {
+        padding: 3rem 0 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .partners-section {
+        padding: 5rem 0 3rem;
+    }
+}
+
 .partners-title {
     text-align: center;
     font-size: 1.25rem;
@@ -11,6 +23,26 @@
     color: #1f2937;
     margin-bottom: 3rem;
     font-weight: 500;
+    line-height: 1.5;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .partners-title {
+        display: none;
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .partners-title {
+        display: block;
+        font-size: 1.5rem;
+        margin-bottom: 3.5rem;
+    }
 }
 
 .marquee-container {
@@ -26,6 +58,13 @@
     gap: 4rem;
     width: max-content;
     animation: scrollHorizontal 30s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .marquee-content {
+        gap: 2.5rem;
+        animation: scrollHorizontal 25s linear infinite;
+    }
 }
 
 .partner-item {
@@ -55,6 +94,13 @@
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    .partner-logo-text {
+        font-size: 0.9rem;
+        line-height: 0.75;
+    }
+}
+
 .logo-icon {
     background: var(--color-primary);
     color: white;
@@ -68,6 +114,15 @@
     border-radius: 4px;
 }
 
+@media (max-width: 768px) {
+    .logo-icon {
+        width: 22px;
+        height: 22px;
+        font-size: 0.8rem;
+        margin-right: 4px;
+    }
+}
+
 @keyframes scrollHorizontal {
     0% {
         transform: translateX(0);
@@ -75,5 +130,37 @@
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+/* Mobile layout refinements for cleaner appearance */
+@media (max-width: 768px) {
+    .marquee-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        mask-image: none;
+        padding: 0 12px;
+    }
+
+    .marquee-content {
+        display: inline-flex;
+        width: auto;
+        gap: 1.25rem;
+        animation: none;
+    }
+
+    .partner-item {
+        min-width: 120px;
+        opacity: 0.8;
+    }
+
+    /* Collapse multiline brand text into one line on mobile */
+    .partner-logo-text br {
+        display: none;
+    }
+
+    .partner-logo-text {
+        font-size: 0.85rem;
+        line-height: 1;
     }
 }

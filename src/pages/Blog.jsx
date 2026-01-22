@@ -10,6 +10,46 @@ const Blog = () => {
     const [featuredBlog, setFeaturedBlog] = useState(null);
     const [blogs, setBlogs] = useState([]);
 
+    // Animation variants
+    const pageVariants = {
+        hidden: { opacity: 0, y: 16 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                when: 'beforeChildren'
+            }
+        }
+    };
+
+    const headerVariants = {
+        hidden: { opacity: 0, y: -12 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+    };
+
+    const featuredVariants = {
+        hidden: { opacity: 0, y: 24 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+    };
+
+    const gridVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.12,
+                ease: 'easeOut'
+            }
+        }
+    };
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 18 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+    };
+
     const getImageUrl = (image) => {
         if (!image) {
             return "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
@@ -86,14 +126,14 @@ const Blog = () => {
     }, []);
 
     return (
-        <div className="blog-page">
+        <motion.div className="blog-page" variants={pageVariants} initial="hidden" animate="show">
             <header className="blog-header">
                 <div className="blog-container">
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
                         className="blog-title-wrapper"
+                        variants={headerVariants}
+                        initial="hidden"
+                        animate="show"
                     >
                         <h1 className="blog-title">Bloglar va Maqolalar</h1>
                         <p className="blog-subtitle">
@@ -108,10 +148,10 @@ const Blog = () => {
                     {featuredBlog && (
                         <motion.div
                             className="blog-featured-card"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
+                            variants={featuredVariants}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.2 }}
                         >
                             <div className="blog-featured-image">
                                 <img 
@@ -150,8 +190,9 @@ const Blog = () => {
                 <div className="blog-container">
                     <motion.div
                         className="blog-grid-header"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        variants={headerVariants}
+                        initial="hidden"
+                        whileInView="show"
                         viewport={{ once: true }}
                     >
                         <span className="blog-section-badge">Yangiliklar</span>
@@ -159,15 +200,18 @@ const Blog = () => {
                         <p className="blog-grid-subtitle">Bizning vositalarimiz orqali moliyangizni oson, tez va aqlli boshqarishni kashf eting.</p>
                     </motion.div>
 
-                    <div className="blog-grid">
+                    <motion.div
+                        className="blog-grid"
+                        variants={gridVariants}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true }}
+                    >
                         {blogs.map((blog, index) => (
                             <motion.div
                                 key={blog.id}
                                 className="blog-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
+                                variants={cardVariants}
                             >
                                 <Link to={`/blog/${blog.slug}`} className="blog-card-image-link">
                                     <div className="blog-card-image">
@@ -198,13 +242,13 @@ const Blog = () => {
                                 </div>
                             </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* App Promo Section */}
             <AppPromo />
-        </div>
+        </motion.div>
     );
 };
 

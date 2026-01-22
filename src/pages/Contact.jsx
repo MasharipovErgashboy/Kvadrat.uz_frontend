@@ -7,10 +7,8 @@ import './Contact.css';
 const Contact = () => {
     const [formData, setFormData] = useState({
         first_name: '',
-        last_name: '',
         user_type: '',
-        phone: '',
-        message: ''
+        phone: ''
     });
     const [status, setStatus] = useState({ loading: false, success: false, error: null });
     const [showNotification, setShowNotification] = useState(false);
@@ -45,7 +43,7 @@ const Contact = () => {
         try {
             await submitContact(formData);
             setStatus({ loading: false, success: true, error: null });
-            setFormData({ first_name: '', last_name: '', user_type: '', phone: '', message: '' });
+            setFormData({ first_name: '', user_type: '', phone: '' });
 
             // Show custom notification
             setShowNotification(true);
@@ -118,19 +116,6 @@ const Contact = () => {
                                     name="first_name"
                                     value={formData.first_name}
                                     onChange={handleChange}
-                                    placeholder="John"
-                                    className="form-input"
-                                    required
-                                />
-                            </div>
-                            <div className="form-group">
-                                <label className="form-label">Familya</label>
-                                <input
-                                    type="text"
-                                    name="last_name"
-                                    value={formData.last_name}
-                                    onChange={handleChange}
-                                    placeholder="Carter"
                                     className="form-input"
                                     required
                                 />
@@ -144,7 +129,6 @@ const Contact = () => {
                                 name="user_type"
                                 value={formData.user_type}
                                 onChange={handleChange}
-                                placeholder="(Uy oluvchi)"
                                 className="form-input"
                             />
                         </div>
@@ -156,22 +140,12 @@ const Contact = () => {
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                placeholder="123 4567"
                                 className="form-input"
                                 required
                             />
                         </div>
 
-                        <div className="form-group">
-                            <label className="form-label">Habar (Ixtiyoriy)</label>
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleChange}
-                                placeholder="Type your message"
-                                className="form-textarea"
-                            ></textarea>
-                        </div>
+                        {/* Habar (message) field removed as requested */}
 
                         <button type="submit" className="submit-btn" disabled={status.loading}>
                             {status.loading ? 'Yuborilmoqda...' : 'Habar jonatish'}
