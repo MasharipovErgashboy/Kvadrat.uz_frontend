@@ -1,0 +1,22 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue m2 logo -->
+  <rect width="120" height="120" fill="white" rx="8"/>
+  
+  <!-- Stylized 'm' shape -->
+  <g fill="#2563eb">
+    <!-- Left vertical line of 'm' -->
+    <rect x="20" y="35" width="14" height="55" rx="7"/>
+    
+    <!-- Middle hump 1 -->
+    <path d="M 34 90 Q 34 45 48 45 Q 62 45 62 65 L 62 90" fill="none" stroke="#2563eb" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Middle hump 2 -->
+    <path d="M 62 65 Q 62 45 76 45 Q 90 45 90 90" fill="none" stroke="#2563eb" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right vertical line -->
+    <rect x="86" y="35" width="14" height="55" rx="7"/>
+  </g>
+  
+  <!-- Superscript '2' -->
+  <text x="100" y="50" font-size="32" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">2</text>
+</svg>
