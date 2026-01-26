@@ -81,47 +81,24 @@
     opacity: 1;
 }
 
-.partner-logo-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    color: var(--color-primary);
-    line-height: 0.8;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: -0.05em;
-    display: flex;
-    align-items: center;
-    text-align: left;
+.partner-logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0%) opacity(0.7);
+    transition: all 0.3s ease;
+}
+
+.partner-logo-img:hover {
+    filter: grayscale(0%) opacity(1);
 }
 
 @media (max-width: 768px) {
-    .partner-logo-text {
-        font-size: 0.9rem;
-        line-height: 0.75;
+    .partner-logo-img {
+        height: 50px;
     }
 }
 
-.logo-icon {
-    background: var(--color-primary);
-    color: white;
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 6px;
-    font-size: 1rem;
-    border-radius: 4px;
-}
-
-@media (max-width: 768px) {
-    .logo-icon {
-        width: 22px;
-        height: 22px;
-        font-size: 0.8rem;
-        margin-right: 4px;
-    }
-}
 
 @keyframes scrollHorizontal {
     0% {

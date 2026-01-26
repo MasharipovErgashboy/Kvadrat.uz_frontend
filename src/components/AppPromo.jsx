@@ -29,7 +29,7 @@ const AppPromo = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        Minglab foydalanuvchilar allaqachon Kvadrat.uz bilan uy egasi bo'lishmoqda — qarzsiz, foizsiz va shaffof yo'l bilan. Barcha moliyaviy jarayonlar bir joyda: ulush qo'yish, bosqichma-bosqich to'lov va mulk huquqini olish oson!
+                        Minglab foydalanuvchilar allaqachon mkvadrat.uz bilan uy egasi bo'lishmoqda — qarzsiz, foizsiz va shaffof yo'l bilan. Barcha moliyaviy jarayonlar bir joyda: ulush qo'yish, bosqichma-bosqich to'lov va mulk huquqini olish oson!
                     </motion.p>
 
                     <motion.div
@@ -75,7 +75,7 @@ const AppPromo = () => {
                     transition={{ duration: 0.7 }}
                 >
                     <div className="glow-effect"></div>
-                    <img src="/app-promo-phone.png" alt="Kvadrat.uz App Interface" className="app-promo-img" />
+                    <img src="/app-promo-phone.png" alt="mkvadrat.uz App Interface" className="app-promo-img" />
                 </motion.div>
 
             </div>

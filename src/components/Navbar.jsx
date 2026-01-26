@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container navbar-container">
         {/* Logo */}
         <Link to="/" className="logo">
-          Kvadrat.uz
+          mkvadrat.uz
         </Link>
 
         {/* Desktop Navigation */}

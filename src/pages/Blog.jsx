@@ -84,8 +84,8 @@ const Blog = () => {
         },
         {
             id: 'd3',
-            title: "Kvadrat.uz orqali uy olishning afzalliklari",
-            description: "Nega aynal Kvadrat.uz? Halol, shaffof va qulay shartlar asosida uy-joyli bo'lish imkoniyatlari haqida batafsil.",
+            title: "mkvadrat.uz orqali uy olishning afzalliklari",
+            description: "Nega aynal mkvadrat.uz? Halol, shaffof va qulay shartlar asosida uy-joyli bo'lish imkoniyatlari haqida batafsil.",
             image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             date: "2024-01-05",
             author: "Admin",

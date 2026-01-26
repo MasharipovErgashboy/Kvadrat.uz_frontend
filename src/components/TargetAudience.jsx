@@ -33,7 +33,7 @@ const TargetAudience = () => {
         {
             id: 4,
             title: "Birinchi uyini xarid qilmoqchi bo'lganlar uchun",
-            description: "Uy olishni orzu qilasiz, lekin to'liq summa yo'qmi? Kvadrat.uz bilan siz oz-ozdan, reja asosida o'z uyingizga yaqinlashasiz.",
+            description: "Uy olishni orzu qilasiz, lekin to'liq summa yo'qmi? mkvadrat.uz bilan siz oz-ozdan, reja asosida o'z uyingizga yaqinlashasiz.",
             image: "https://framerusercontent.com/images/jTIeVmn34FQDWImyVyHibFPq0lI.jpg",
             order: 4
         }
@@ -63,7 +63,7 @@ const TargetAudience = () => {
                 {/* Header */}
                 <div className="target-header">
                     <span className="target-badge">Kimlar uchun?</span>
-                    <h2 className="target-title">Kvadrat.uz kimlar uchun?</h2>
+                    <h2 className="target-title">mkvadrat.uz kimlar uchun?</h2>
                 </div>
 
                 {/* Vertical Card Stack */}
@@ -86,7 +86,7 @@ const TargetAudience = () => {
                                 </Link>
                             </div>
                             <div className="target-image-wrapper">
-                                <img src={item.image} alt={item.title} className="target-img" onError={(e) => {e.target.src = 'https://framerusercontent.com/images/BkOGKAbN5HhpzxbbXH5dalUMa4.jpg';}} />
+                                <img src={item.image} alt={item.title} className="target-img" onError={(e) => { e.target.src = 'https://framerusercontent.com/images/BkOGKAbN5HhpzxbbXH5dalUMa4.jpg'; }} />
                             </div>
                         </motion.div>
                     ))}

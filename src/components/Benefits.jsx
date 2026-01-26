@@ -31,7 +31,7 @@ const Benefits = () => {
                         <div className="benefit-text-content">
                             <h3>Foizsiz va shaffof hamkorlik orqali uyingizga ega bo'ling</h3>
                             <p>
-                                Kvadrat.uz orqali siz tanlagan uyga boshlang'ich ulush kiritasiz. Qolgan qismi Kvadrat.uz bilan hamkorlik asosida moliyalashtiriladi. Ortiqcha qarz, bank foizi va yashirin shartlarsiz — faqat aniq hisob-kitob.
+                                mkvadrat.uz orqali siz tanlagan uyga boshlang'ich ulush kiritasiz. Qolgan qismi mkvadrat.uz bilan hamkorlik asosida moliyalashtiriladi. Ortiqcha qarz, bank foizi va yashirin shartlarsiz — faqat aniq hisob-kitob.
                             </p>
                         </div>
 
@@ -55,7 +55,7 @@ const Benefits = () => {
                         <div className="benefit-text-content">
                             <h3>Ko'chmas mulkka sarmoya — <br /> uysiz, tashvishsiz</h3>
                             <p>
-                                Kvadrat.uz orqali siz uy sotib olmaysiz. Siz tayyor va tekshirilgan uyga investitsiya qilasiz. <br /> Qanday ishlaydi?
+                                mkvadrat.uz orqali siz uy sotib olmaysiz. Siz tayyor va tekshirilgan uyga investitsiya qilasiz. <br /> Qanday ishlaydi?
                             </p>
                             <ul className="benefit-list">
                                 <li>Pul real ko'chmas mulkka yo'naltiriladi</li>

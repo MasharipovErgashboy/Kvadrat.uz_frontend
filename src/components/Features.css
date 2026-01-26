@@ -2,7 +2,7 @@
     padding-top: 5rem;
     padding-bottom: 0;
     /* Light blue-ish tint similar to reference */
-    background-color: white;
+    background-color: #F2F9FF;
 }
 
 @media (min-width: 1024px) {
@@ -103,6 +103,7 @@
 }
 
 @media (max-width: 768px) {
+
     .col-left,
     .col-right {
         gap: 5.5rem;

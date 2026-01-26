@@ -33,9 +33,9 @@ const Footer = () => {
 
                     {/* Left Side: Links & Info */}
                     <div className="footer-info-col">
-                        <h3 className="footer-brand-text">Kvadrat.uz</h3>
+                        <h3 className="footer-brand-text">mkvadrat.uz</h3>
                         <p className="footer-desc">
-                            Send me the Kvadrat.uz newsletter. I expressly agree to receive the newsletter and know that I can easily unsubscribe at any time.
+                            Send me the mkvadrat.uz newsletter. I expressly agree to receive the newsletter and know that I can easily unsubscribe at any time.
                         </p>
 
                         <div className="footer-links-grid">
@@ -59,7 +59,7 @@ const Footer = () => {
                             <span className="big-m">m</span>
                             <span className="big-sq">2</span>
                         </div>
-                        <span className="large-brand-name">Kvadrat.uz</span>
+                        <span className="large-brand-name">mkvadrat.uz</span>
                     </div>
 
                 </div>

@@ -30,7 +30,7 @@ const Features = () => {
                             </div>
                             <h3 className="feature-title">Uy tanlaysiz</h3>
                             <p className="feature-desc">
-                                O'zingiz olishni xohlagan uyni tanlaysiz va bizga ko'rsatasiz. Kvadrat.uz esa aniq hisob-kitob va shaffof shartlar asosida uyni birga sotib olishga yordam beradi
+                                O'zingiz olishni xohlagan uyni tanlaysiz va bizga ko'rsatasiz. mkvadrat.uz esa aniq hisob-kitob va shaffof shartlar asosida uyni birga sotib olishga yordam beradi
                             </p>
                         </div>
 
@@ -40,7 +40,7 @@ const Features = () => {
                             </div>
                             <h3 className="feature-title">Bosqichma-bosqich to'lov qilasiz</h3>
                             <p className="feature-desc">
-                                Kelishilgan jadval asosida oyma-oy yoki choraklik to'lov qilasiz. Har bir to'lov bilan Kvadrat.uz ulushini bosqichma-bosqich sotib olasiz. Ustama yo'q, penya yoki qo'shimcha foizlar ham yo'q.
+                                Kelishilgan jadval asosida oyma-oy yoki choraklik to'lov qilasiz. Har bir to'lov bilan mkvadrat.uz ulushini bosqichma-bosqich sotib olasiz. Ustama yo'q, penya yoki qo'shimcha foizlar ham yo'q.
                             </p>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Features = () => {
                             </div>
                             <h3 className="feature-title">Ulushingizni qo'ying</h3>
                             <p className="feature-desc">
-                                Siz uy qiymatining bir qismini boshlang'ich ulush sifatida kiritasiz. Qolgan qismini Kvadrat.uz qoplaydi, siz esa bosqichma-bosqich Kvadrat.uz ulushini sotib olasiz.
+                                Siz uy qiymatining bir qismini boshlang'ich ulush sifatida kiritasiz. Qolgan qismini mkvadrat.uz qoplaydi, siz esa bosqichma-bosqich mkvadrat.uz ulushini sotib olasiz.
                             </p>
                         </div>
 

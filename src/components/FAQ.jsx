@@ -32,7 +32,7 @@ const FAQ = () => {
                     <span className="faq-badge">FAQ</span>
                     <h2 className="faq-title">Ko'p beriladigan savollar</h2>
                     <p className="faq-subtitle">
-                        Kvadrat.uz ilovasidan foydalanishga oid eng ko'p beriladigan savollar
+                        mkvadrat.uz ilovasidan foydalanishga oid eng ko'p beriladigan savollar
                     </p>
                 </div>
 

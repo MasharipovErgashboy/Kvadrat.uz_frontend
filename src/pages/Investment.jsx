@@ -132,12 +132,12 @@ const Investment = () => {
         {
             id: 2,
             title: "Ijara puli kechiksa",
-            text: "Ijara to'lovi kechiksa, investor daromadi vaqtincha kechikishi mumkin, ammo asosiy mablag' xavfsiz qoladi. Kvadrat.uz jarayonni nazorat qiladi, ijarachi bilan ishlaydi va zarur choralarni ko'radi. Barcha jarayonlar shaffof."
+            text: "Ijara to'lovi kechiksa, investor daromadi vaqtincha kechikishi mumkin, ammo asosiy mablag' xavfsiz qoladi. mkvadrat.uz jarayonni nazorat qiladi, ijarachi bilan ishlaydi va zarur choralarni ko'radi. Barcha jarayonlar shaffof."
         },
         {
             id: 3,
             title: "Uy oluvchi pulini to'lay olmay qolsa",
-            text: "Agar uy oluvchi to'lovni kechiktirsa, jarayon vaqtincha kechikishi mumkin, ammo investor mablag'i xavfsiz qoladi. Kvadrat.uz shartnoma va qonuniy mexanizmlar orqali masalani hal qiladi yoki boshqa xaridor bilan davom etadi. Investor manfaatlari doimiy himoyalangan."
+            text: "Agar uy oluvchi to'lovni kechiktirsa, jarayon vaqtincha kechikishi mumkin, ammo investor mablag'i xavfsiz qoladi. mkvadrat.uz shartnoma va qonuniy mexanizmlar orqali masalani hal qiladi yoki boshqa xaridor bilan davom etadi. Investor manfaatlari doimiy himoyalangan."
         }
     ];
 
@@ -145,8 +145,8 @@ const Investment = () => {
         <div className="investment-page">
             <header className="investment-header">
                 <div className="inv-container">
-                    <h1 className="inv-title">Kvadrat.uz orqali <br /> <span className="inv-title-highlight">investitsiya</span></h1>
-                    <p className="inv-subtitle">“Siz investitsiya qilasiz, mablag‘ingiz Kvadrat.uz orqali ishlaydi”</p>
+                    <h1 className="inv-title">mkvadrat.uz orqali <br /> <span className="inv-title-highlight">investitsiya</span></h1>
+                    <p className="inv-subtitle">“Siz investitsiya qilasiz, mablag‘ingiz mkvadrat.uz orqali ishlaydi”</p>
 
                     <div className="inv-hero-image-wrapper">
                         <img src="https://framerusercontent.com/images/USz4Ub9knpKihCjIEBTN0tqqUqs.png" alt="Investment Team" className="inv-hero-image" />
@@ -234,7 +234,7 @@ const Investment = () => {
                 <div className="inv-container">
                     <div className="inv-section-header">
                         <span className="inv-badge">Xavfsizlik</span>
-                        <h2 className="inv-section-title">Kvadrat.uz'da xavfsizlik va yechimlar</h2>
+                        <h2 className="inv-section-title">mkvadrat.uz'da xavfsizlik va yechimlar</h2>
                     </div>
 
                     <div className="inv-security-grid">
@@ -315,7 +315,7 @@ const Investment = () => {
                 <div className="inv-container">
                     <div className="inv-section-header">
                         <span className="inv-badge">FAQ</span>
-                        <h2 className="inv-section-title">Kvadrat.uz bo'yicha savollar</h2>
+                        <h2 className="inv-section-title">mkvadrat.uz bo'yicha savollar</h2>
                         <p className="inv-section-subtitle">Eng ko'p beriladigan investitsion savollarga javoblar</p>
                     </div>
 

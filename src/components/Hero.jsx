@@ -40,7 +40,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <span className="text-primary">Kvadrat.uz</span> bilan — qarzsiz<br />
+                    <span className="text-primary">mkvadrat.uz</span> bilan — qarzsiz<br />
                     va foizsiz uy egasi bo'ling!
                 </motion.h1>
 
@@ -61,7 +61,7 @@ const Hero = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
                     >
-                        <img src={HeroPhone} alt="Kvadrat.uz App Interface" className="hero-phone-img" />
+                        <img src={HeroPhone} alt="mkvadrat.uz App Interface" className="hero-phone-img" />
                     </motion.div>
 
                     {/* Floating Card: Investor (Left) */}

@@ -38,9 +38,9 @@ const BlogDetails = () => {
         },
         {
             id: 'd3',
-            title: "Kvadrat.uz orqali uy olishning afzalliklari",
-            description: "Nega aynan Kvadrat.uz? Halol, shaffof va qulay shartlar asosida uy-joyli bo'lish imkoniyatlari haqida batafsil.",
-            content: "<p>Kvadrat.uz - bu O'zbekistonda ko'chmas mulk sohasidagi inqilobiy platforma.<br/><br/><strong>Bizning afzalliklarimiz:</strong><br/>- <strong>Shaffoflik:</strong> Hech qanday yashirin to'lovlar yo'q.<br/>- <strong>Qulaylik:</strong> Barcha jarayonlar onlayn tarzda amalga oshiriladi.<br/>- <strong>Halollik:</strong> Islom moliyasi tamoyillariga to'liq javob beradi.<br/>- <strong>Tezkorlik:</strong> Hujjatlarni rasmiylashtirish sanoqli daqiqalarni oladi.</p>",
+            title: "mkvadrat.uz orqali uy olishning afzalliklari",
+            description: "Nega aynan mkvadrat.uz? Halol, shaffof va qulay shartlar asosida uy-joyli bo'lish imkoniyatlari haqida batafsil.",
+            content: "<p>mkvadrat.uz - bu O'zbekistonda ko'chmas mulk sohasidagi inqilobiy platforma.<br/><br/><strong>Bizning afzalliklarimiz:</strong><br/>- <strong>Shaffoflik:</strong> Hech qanday yashirin to'lovlar yo'q.<br/>- <strong>Qulaylik:</strong> Barcha jarayonlar onlayn tarzda amalga oshiriladi.<br/>- <strong>Halollik:</strong> Islom moliyasi tamoyillariga to'liq javob beradi.<br/>- <strong>Tezkorlik:</strong> Hujjatlarni rasmiylashtirish sanoqli daqiqalarni oladi.</p>",
             image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             date: "2024-01-05",
             slug: "kvadratuz-afzalliklari",
